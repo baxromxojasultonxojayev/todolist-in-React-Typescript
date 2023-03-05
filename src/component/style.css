@@ -1,0 +1,96 @@
+* {
+  list-style: none;
+}
+
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+.inputBox {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.inputBox:focus {
+  outline: none;
+}
+
+.input_submit {
+  position: absolute;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input_submit:hover {
+  transition: 1s;
+  transform: scale(0.8);
+  background-color: red;
+}
+
+.todos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.todoSingle {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 50px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.icons .editIcon {
+  color: yellow;
+  cursor: pointer;
+}
+
+.icons .deleteIcon {
+  color: red;
+  cursor: pointer;
+}
+
+.icons .doneIcon {
+  color: green;
+  cursor: pointer;
+}
+
+.editIcon:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+.deleteIcon:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+.doneIcon:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
